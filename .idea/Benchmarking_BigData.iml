@@ -4,7 +4,10 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <content url="file:///opt/spark/python" />
+    <content url="jar:///opt/spark/python/lib/py4j-0.10.7-src.zip!/" />
+    <content url="jar:///opt/spark/python/lib/pyspark.zip!/" />
+    <orderEntry type="jdk" jdkName="Python 2.7 (Benchmarking_BigData)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
