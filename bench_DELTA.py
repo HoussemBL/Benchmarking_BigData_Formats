@@ -7,6 +7,8 @@ from pyspark.sql.functions import col,lit
 from pyspark.sql.types import *
 from time import time
 
+
+###not yet working
 def main():
     csv_docs = "/home/houssem/scala-workspace/ML_BigDATA/Grades.csv"
     spark = SparkSession.builder.appName("how to read csv file") \
@@ -21,8 +23,6 @@ def main():
     df = spark.read.csv(csv_docs,header=True)
     newDF=df.withColumn("university",lit("MIT"))
     newDF.show(3)
-
-
 
 
 
