@@ -25,10 +25,6 @@ def main():
     ################################writing operation ######################################
     start_time = time()
     newDF.write.parquet(path="/home/houssem/spark-formats/parquet/grades",mode="overwrite")
-    #newDF.write \
-    #    .format("parquet") \
-     #   .mode("overwrite") \
-     #   .save("file:/home/houssem/spark-formats/parquet/grades")
     end_time = time()
 
     ################################reading  (ALL) operation ######################################
