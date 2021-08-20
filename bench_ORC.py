@@ -14,13 +14,10 @@ def main():
             .getOrCreate()
 
 
-
     df = spark.read.csv(csv_docs,header=True)
     #df.show(5)
     newDF=df.withColumn("university",lit("MIT"))
     newDF.show(3)
-
-
 
     ################################writing operation ######################################
     start_time = time()
