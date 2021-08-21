@@ -15,7 +15,6 @@ def main():
             .getOrCreate()
 
 
-
     df = spark.read.csv(csv_docs,header=True)
     newDF=df.withColumn("university",lit("MIT"))
     newDF.show(3)
