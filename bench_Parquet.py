@@ -14,7 +14,7 @@ def main():
             .master("local[*]") \
             .getOrCreate()
 
-
+  ################################ read input document ######################################
     df = spark.read.csv(csv_docs,header=True)
     newDF=df.withColumn("university",lit("MIT"))
     newDF.show(3)
