@@ -19,8 +19,6 @@ def main():
     newDF=df.withColumn("university",lit("MIT"))
     newDF.show(3)
 
-
-
     ################################writing operation ######################################
     start_time = time()
     newDF.write.parquet(path="/home/houssem/spark-formats/parquet/grades",mode="overwrite")
