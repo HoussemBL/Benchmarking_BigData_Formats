@@ -39,11 +39,10 @@ def main():
     end_projection_all = time()
 
 
-
+ ################################ print out results ######################################
     writing_elapsed = end_time - start_time
     reading_all_elapsed = end_reading_all - start_reading_all
     projection_all_elapsed = end_projection_all- start_projection_all
-
 
     print("time in sec required to write ORC: {} ".format(writing_elapsed))
     print("time in sec required to read all ORC: {} ".format(reading_all_elapsed))
