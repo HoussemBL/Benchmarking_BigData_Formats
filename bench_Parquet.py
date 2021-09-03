@@ -30,12 +30,15 @@ def main():
     parquet_df = spark.read.option("mergeSchema", "true").parquet("/home/houssem/spark-formats/parquet/grades")
     parquet_df.show(3)
     end_reading_all= time()
+    
     ################################reading (one column) operation ######################################
     start_projection_all = time()
     parquet_df_projection = spark.read.format("parquet").load("file:/home/houssem/spark-formats/parquet/grades").select("university")
     parquet_df_projection.show(3)
     end_projection_all = time()
 
+     
+    ################################results ######################################
     writing_elapsed = end_time - start_time
     reading_all_elapsed = end_reading_all - start_reading_all
     projection_all_elapsed = end_projection_all- start_projection_all
