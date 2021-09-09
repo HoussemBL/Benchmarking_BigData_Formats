@@ -36,8 +36,7 @@ def main():
     parquet_df_projection = spark.read.format("parquet").load("file:/home/houssem/spark-formats/parquet/grades").select("university")
     parquet_df_projection.show(3)
     end_projection_all = time()
-
-     
+  
     ################################results ######################################
     writing_elapsed = end_time - start_time
     reading_all_elapsed = end_reading_all - start_reading_all
