@@ -26,7 +26,6 @@ def main():
 
 
 
-
 # entry point for PySpark ETL application
 if __name__ == '__main__':
     main()
