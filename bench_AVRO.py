@@ -34,6 +34,7 @@ def main():
     orc_df = spark.read.format("avro").load("file:/home/houssem/spark-formats/avro/grades")
     orc_df.show(3)
     end_reading_all= time()
+    
     ################################reading (one column) operation ######################################
     start_projection_all = time()
     orc_df_projection = spark.read.format("avro").load("file:/home/houssem/spark-formats/avro/grades").select("university")
