@@ -48,6 +48,7 @@ def main():
     print("time in sec required to read all ORC: {} ".format(reading_all_elapsed))
     print("time in sec required to read a column from ORC: {} ".format(projection_all_elapsed) )
 
+    
 # entry point for PySpark ETL application
 if __name__ == '__main__':
     main()
