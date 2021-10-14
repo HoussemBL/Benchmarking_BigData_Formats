@@ -7,6 +7,7 @@ from pyspark.sql.functions import col,lit
 from pyspark.sql.types import *
 from time import time
 
+
 def main():
     csv_docs = "/home/houssem/scala-workspace/ML_BigDATA/Grades.csv"
     spark = SparkSession.builder.appName("how to read csv file")\
