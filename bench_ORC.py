@@ -27,7 +27,6 @@ def main():
     .mode("overwrite")\
     .orc("file:/home/houssem/spark-formats/orc/grades")
     end_time = time()
-
     ################################reading  (ALL) operation ######################################
     start_reading_all = time()
     orc_df = spark.read.orc("file:/home/houssem/spark-formats/orc/grades")
