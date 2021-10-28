@@ -40,7 +40,6 @@ def main():
     end_projection_all = time()
 
 
-
     writing_elapsed = end_time - start_time
     reading_all_elapsed = end_reading_all - start_reading_all
     projection_all_elapsed = end_projection_all- start_projection_all
