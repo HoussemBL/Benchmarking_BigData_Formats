@@ -24,6 +24,7 @@ def main():
     newDF.show(3)
 
 
+    
 # entry point for PySpark ETL application
 if __name__ == '__main__':
     main()
