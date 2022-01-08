@@ -39,7 +39,6 @@ def main():
     orc_df_projection.show(3)
     end_projection_all = time()
 
-
  ################################ print out results ######################################
     writing_elapsed = end_time - start_time
     reading_all_elapsed = end_reading_all - start_reading_all
